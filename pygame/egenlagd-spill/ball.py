@@ -1,4 +1,5 @@
 import pygame as pg
+from random import vindu 
 
 class Ball:
   """Klasse for å representere en ball"""
@@ -22,6 +23,10 @@ class Ball:
     
     # Flytter ballen
     self.x += self.fart
+
+    # Tegner og flytter ballen
+    ball.tegn()
+    ball.flytt()
 
 # Lager et Ball-objekt
 ball = Ball(250, 250, 0.1, 20, vindu)
